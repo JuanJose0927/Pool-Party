@@ -1,0 +1,102 @@
+.btn-twitter{
+    background-color: #31a1f2;
+    color: white;
+}
+
+a.btn-twitter:hover{
+    color: white;
+    box-shadow: -2px 3px 6px black;
+}
+
+/* GLOBAL */
+
+body, html, .container, .row{
+    height: 100vh;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+}
+
+/*
+
+    ESTILOS FORMULARIO
+
+*/
+
+div.col-lg-4
+{
+    border: 10px solid transparent;
+    border-image: linear-gradient(to bottom, #1e1e96, #223946) 1;
+    color: black;
+}
+
+button.btn-success
+{
+    margin: 10px 0px;
+    background-image: linear-gradient(to bottom, #1e1e96, #223946);
+    border: 0;
+}
+
+div.form-group{
+    margin: 10px auto;
+}
+
+/*
+
+    ESTILOS TARJETA
+    
+*/
+
+.col-lg-7 .card-header, .card-footer{
+    background-image: linear-gradient(to right, #1e1e96, #223946);
+    color:aquamarine;
+    font-weight: 700;
+}
+
+.card-body
+{
+    background-image: url(https://previews.123rf.com/images/darkink/darkink1606/darkink160600077/59179425-fiesta-en-la-piscina-al-aire-libre-en-la-playa-en-los-tr%C3%B3picos-.jpg);
+}
+
+.card-content
+{
+    background-color:lightblue;
+    width: fit-content;
+    margin: 5px auto;
+    padding: 50px 20px;
+    border: 10px solid black;
+}
+
+.card-content img
+{
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    margin: 0px auto 25px auto;
+}
+
+.card-title
+{
+    font-weight: 700;
+    background: linear-gradient(to bottom,#1e1e96, #223946);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: tomato;
+    font-size: 30px;
+    text-align: center;
+}
+
+.Student
+{
+    font-weight: 700;
+}
+
+.Aprendido
+{
+    font-size: 20px;
+}
+body{
+    background-image: url(https://esports.eldesmarque.com/wp-content/uploads/2020/06/Skins.jpg);
+}

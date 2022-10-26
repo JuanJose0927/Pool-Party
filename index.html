@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-4">
+                <form id="FormGenerarTarjeta">
+                    <div class="form-group text-center">
+                      <label for="Name">Digite su nombre:</label>
+                      <input required type="text" class="form-control" id="Name" aria-describedby="Tu nombre">
+                    </div>
+                    <div class="form-group text-center">
+                      <label for="Celebración">Tu actividad deseada para celebrar su cumpleaños:</label>
+                      <textarea required id="Aprendizaje" cols="30" rows="1" class="form-control" aria-describedby="Actividades para esta celebración"></textarea>
+                  </div>
+                    <button type="submit" class="btn btn-success" id="Generar">Generar</button>
+                  </form>
+            </div>
+            <div class="col-sm-12 col-lg-7">
+                <div class="card text-center">
+                    <div class="card-header">
+                      TE ESPERAMOS, DÍA: 1/NOVIEMBRE/2022 🎉
+                    </div>
+                    <div class="card-body">
+                        <div class="card-content">
+                            <img src="data:image/png;base64,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" alt="Este mensaje es para ti">
+                            <h5 class="card-title">
+                                🎉 Mis 18 años 🎉 <br>
+                                
+                                </h5>
+                            <p> Hola: El motivo de esta carta es que sepas que estas invitado a celebrar conmigo mis 18 años <br> <span id=Student> </span> <br> <hr>  El lugar de la fiesta es: Condominio Altos del Campestre: <br><br> 
+                                Recuerda que para esta fiesta debes de llevar todas tus energias porque va a estar de lokos y vamos a sacar la casa por la ventana <br> <br> Recuerda llenar el formulario anterior, y las ideas son importantes ya que nos servira para relizar una mejor experiencia 
+                               </p>
+                            <p class="card-text" id="Aprendido">...</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                      Te espero en mi fiesta de cumpleaños.
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/scripts.js"></script>
+    <link rel="stylesheet" href="CSS/styles.css">    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
